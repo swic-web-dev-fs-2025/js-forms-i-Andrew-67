@@ -40,21 +40,21 @@
     <div>
     <label class="mb-1 block text-sm font-medium" for="passwordCheck">Verify Password</label>
     <input
-      id="passwordCheck"
-      name="passwordCheck"
+      id="checker"
+      name="checker"
       type="password"
       required
       class="w-full rounded border px-3 py-2"
     />
   </div>
   <button
-    class="mt-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600"
+    class="mt-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 disabled:bg-gray-400"
     type="submit"
   >
     Submit
   </button>
+  <output id="error" class="text-red-500 italic"></output>
 </form>
-<section id="result" class="mt-6"></section>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
